@@ -13,8 +13,21 @@
     <script type="text/jsx">
       // creating app element.
       const app = document.getElementById("app");
+
+      function Header() {
+        return (<h1>Hello World, here to Develop, Preview, Ship.</h1>)
+      }
+
+      function HomePage() {
+        return (
+        <div>
+        {/* Nesting the header component*/}
+          <Header/>
+        </div>)
+      }
+
       const root = ReactDOM.createRoot(app);
-      root.render(<h1>Hello World, here to Develop, Preview, Ship.</h1>);
+      root.render(<HomePage/>);
     </script>
   </body>
 </html>
