@@ -7,18 +7,14 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="text/javascript">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
       // creating app element.
       const app = document.getElementById("app");
-      const header = document.createElement("h1");
-
-      // inserting data for element.
-      const text = "Hello World, here to Develop, Preview, Ship.";
-      const hdrCnt = document.createTextNode(text);
-
-      // element appending here...
-      header.appendChild(hdrCnt);
-      app.appendChild(header);
+      const root = ReactDOM.createRoot(app);
+      root.render(<h1>Hello World, here to Develop, Preview, Ship.</h1>);
     </script>
   </body>
 </html>
