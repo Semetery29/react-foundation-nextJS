@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Fundamentals with NEXT.JS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+      // creating app element.
+      const app = document.getElementById("app");
+      const header = document.createElement("h1");
+
+      // inserting data for element.
+      const text = "Hello World, here to Develop, Preview, Ship.";
+      const hdrCnt = document.createTextNode(text);
+
+      // element appending here...
+      header.appendChild(hdrCnt);
+      app.appendChild(header);
+    </script>
+  </body>
+</html>
